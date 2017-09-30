@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Make the Space",
+  "version": "0.0.1",
+  "incognito": "split",
+  "description": "Make the Space - Chrome extension.",
+
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+  "content_scripts": [ {
+   "js": [ "jquery-3.2.1.min.js", "js/app.js" ],
+   "matches": [ "http://*/*", "https://*/*"]
+ }]
+}
