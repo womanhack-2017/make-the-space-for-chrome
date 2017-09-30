@@ -1,4 +1,7 @@
 class TweetController < ApplicationController
+  
+  attr_reader: :tweet_parse_for_share
+
   def index
     # @tweets = Tweet.all
     # render json: @tweets
@@ -11,4 +14,9 @@ class TweetController < ApplicationController
     @tweet = Tweet.find(params[:id])
     render json: @tweet
   end
+
+  def tweet_parse_for_share
+    @tweet.tweet_content.gsub(" ", "+")
+  end 
+
 end
