@@ -1,0 +1,2 @@
+class Develop < ApplicationRecord
+end
