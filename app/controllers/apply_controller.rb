@@ -1,7 +1,11 @@
 class ApplyController < ApplicationController
   def index
-    @applies = Apply.all
-    render json: @applies
+    # @applies = Apply.all
+    # render json: @applies
+
+    @apply = Apply.all.sample
+    render json: @apply
+
   end
 
   def show

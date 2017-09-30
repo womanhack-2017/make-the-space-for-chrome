@@ -1,7 +1,10 @@
 class TweetController < ApplicationController
   def index
-    @tweets = Tweet.all
-    render json: @tweets
+    # @tweets = Tweet.all
+    # render json: @tweets
+
+    @tweet = Tweet.all.sample
+    render json: @tweet
   end
 
   def show

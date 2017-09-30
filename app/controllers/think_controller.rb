@@ -1,7 +1,10 @@
 class ThinkController < ApplicationController
   def index
-    @thinks = Think.all
-    render json: @thinks
+    # @thinks = Think.all
+    # render json: @thinks
+
+    @think = Think.all.sample
+    render json: @think
   end
 
   def show
