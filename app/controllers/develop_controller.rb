@@ -1,7 +1,10 @@
 class DevelopController < ApplicationController
   def index
-    @develops = Develop.all
-    render json: @develops
+    # @develops = Develop.all
+    # render json: @develops
+
+    @develop = Develop.all.sample
+    render json: @develop
   end
 
   def show

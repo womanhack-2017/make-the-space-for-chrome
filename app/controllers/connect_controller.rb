@@ -1,7 +1,9 @@
 class ConnectController < ApplicationController
   def index
-    @connects = Connect.all
-    render json: @connects
+    # @connects = Connect.all
+    # render json: @connects
+    @connect = Connect.all.sample
+    render json: @connect
   end
 
   def show
