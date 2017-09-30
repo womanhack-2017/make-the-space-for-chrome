@@ -7,7 +7,7 @@ $(document).ready(function() {
   var root = 'https://make-the-space.herokuapp.com/';
 
   var applyListener = function() {
-    $("div#apply").on("click", function(e) {
+    $("div#apply").one("mouseover", function(e) {
       e.preventDefault();
       var applyContent = $(this);
 
