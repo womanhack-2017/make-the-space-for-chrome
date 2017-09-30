@@ -1,7 +1,16 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require 'csv'
+
+Tweet.destroy_all 
+
+csv_tweet_text = File.read(Rails.root.join('lib', 'seeds', 'tweet_1.csv'))
+
+csv_tweet = CSV.parse(csv_tweet_text, :headers => true, :encoding => 'ISO-8859-1')
+
+csv_tweet.each do |row|
+  t = Tweet.new
+  t.tweet_content = row['tweet_content']
+  t.save!
+  puts "#{t.tweet_content} saved"
+end 
+
+puts "There are now #{Tweet.count} rows in the Tweets table."
