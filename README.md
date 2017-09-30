@@ -1,24 +1,27 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# Make the Space
 
-* Ruby version
+**A platform to elevate women everyday. **
 
-* System dependencies
+Make the space is a chrome extension that provides a command center homepage for female positive actions.
 
-* Configuration
 
-* Database creation
+**Send a Prepopulated Tweet**
 
-* Database initialization
+**Donate to an important charity**
 
-* How to run the test suite
+**Plan to attend to an Eventbright event**
 
-* Services (job queues, cache servers, search engines, etc.)
+**Think about an article**
 
-* Deployment instructions
+**Evolve with an suggested action** 
 
-* ...
+Authors:
+Fay Hayes
+Ginny Fans
+Andrea Scott
+Denise Duffy 
+Vilde Vevatne
+
+Using Ruby version 2.3.1
