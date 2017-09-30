@@ -2,31 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="jquery-3.2.1.min.js"></script>
-    <script src="js/test.js"></script>
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <link rel="icon" href="../../favicon.ico">
-
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="practice3.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:700" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css" > 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -35,47 +22,47 @@
     <![endif]-->
 
     <title>Make The Space</title>
-</head>
+  </head>
 <body>
     
     <div class="container">
         <div class="row justify-content-start">
            
-           <div id="tweet" class="col-sm-4">
-                <h3 id="tile-title">Tweet</h3>
+           <div id="think" class="col-sm-4">
+                <h3 id="tile-title">think</h3>
                 <!-- <p class="tile-body">tweet</p> -->
                 <h5 id="content-title">This is the title of the article</h5>
                 <p class="tile-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
            
-            <div id="evolve" class="col-sm-4">
-                <h3 id="tile-title">Evolve</h3>
-                <p class="tile-body"> evolve</p>    
+            <div id="tweet" class="col-sm-4">
+                <h3 id="tweet-title">tweet</h3>
+                <p class="tweet-text"> tweet</p>    
             </div>
 
             <div id="meet" class="col-sm-4">
-                <h3 id="tile-title">Meet</h3>
-                <p class="tile-body">meet</p>   
+                <h3 id="meet-title">meet</h3>
+                <p class="meet-text">meet</p>   
             </div>
         </div>
 
         <div class="row justify-content-start">
 
-            <div id="apply" class="col-sm-4">
-                <h3 id="tile-title">Apply</h3>
-                <p class="tile-body">apply</p>  
+            <div id="evolve" class="col-sm-4">
+                <h3 id="evolve-title">evolve</h3>
+                <p class="evolve-text">evolve</p>  
             </div>
 
             <div id="donate" class="col-sm-4">
-                <h3 id="tile-title">Donate</h3>
-                <p class="tile-body">donate</p> 
+                <h3 id="donate-title">donate</h3>
+                <p class="donate-text">donate</p> 
             </div>
 
-            <div id="think" class="col-sm-4">
-                <h3 id="tile-title">Think</h3>
-                <h5 id="content-title">This is the title of the article</h5>
+            <div id="apply" class="col-sm-4">
+                <h3 id="apply-title">apply</h3>
+                <h5 id="apply-content-title">This is the title of the article</h5>
                 <p id="author">-Denise Duffy</p>
-                <p class="tile-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p id="apply-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 <!-- <p class="tile-body">think</p>  -->      
             </div>
         </div>    
@@ -84,10 +71,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 
 </html>
