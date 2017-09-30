@@ -2,12 +2,12 @@
 
 # Make the Space
 
-**A platform to elevate women everyday. **
+**A platform to elevate women everyday **
 
-Make the space is a chrome extension that provides a command center homepage for female positive actions.
+Make the space is a Chrome extension that provides a command center homepage for female-positive actions.
 
 
-**Send a Prepopulated Tweet**
+**Send a prepopulated tweet**
 
 **Donate to an important charity**
 
@@ -15,11 +15,11 @@ Make the space is a chrome extension that provides a command center homepage for
 
 **Think about an article**
 
-**Evolve with an suggested action** 
+**Evolve with a suggested action** 
 
 Authors:
-Fay Hayes
-Ginny Fans
+Faye Hayes
+Ginny Fahs
 Andrea Scott
 Denise Duffy 
 Vilde Vevatne
