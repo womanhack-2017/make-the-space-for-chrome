@@ -4,7 +4,7 @@ $(document).ready(function() {
     var root = 'https://make-the-space.herokuapp.com';
 
     $.ajax({
-      url: root + '/tweet/1',
+      url: root ,
       method: 'GET',
     })
       .done(function(response) {
