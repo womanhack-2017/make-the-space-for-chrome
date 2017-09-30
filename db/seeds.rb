@@ -19,11 +19,7 @@ csv_apply.each do |row|
   a.description = row['description']
   a.URL = row['URL']
   a.save!
-  puts "Job resource is #{a.name}"
-  puts "#{a.description}"
-  puts "Link here: #{a.URL}"
 end 
-puts "There are now #{Apply.count} rows in the Develop database table."
 
 #populate develop table
 csv_develop_file = File.read(Rails.root.join('lib', 'seeds', 'develop_1.csv'))
