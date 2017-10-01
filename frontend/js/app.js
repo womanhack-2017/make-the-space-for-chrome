@@ -5,9 +5,46 @@ $(document).ready(function() {
     thinkListener();
     evolveListener();
     donateListener();
+    tweetListener();
+    meetListener();
   });
 
   var root = 'https://make-the-space.herokuapp.com/';
+
+  var meetListener = function() {
+    $("div#meet").one("mouseover", function(e) {
+      e.preventDefault();
+      $.ajax({
+        url: root + "connect",
+        method: 'GET'
+      })
+      .done(function(response) {
+        $("#event-title").html(`<a href=${response.URL}>${response.title}</a>`)
+        $("#event-description").html(response.description)
+      })
+      .fail(function(response) {
+        console.log(response)
+      })
+    })
+  }
+
+  var tweetListener = function () {
+    $("div#tweet").one("mouseover", function(e) {
+      e.preventDefault();
+      $.ajax({
+        url: root + "tweet",
+        method: 'GET'
+      })
+      .done(function(response) {
+        console.log(response)
+        $("#tweet-description").html(response.tweet_content)
+        $("#tweet-content").html(`<a href=${response.share_tweet} class="twitter-share-button"data-show-count="false">  Tweet Now</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>`)
+      })
+      .fail(function(response) {
+        console.log(response)
+      })
+    })
+  }
 
   var donateListener = function () {
     $("div#donate").one("mouseover", function(e) {
@@ -53,7 +90,6 @@ $(document).ready(function() {
         $("#think-content-title").html( `<a href=${response.URL}>${response.title}</a>` )
         $("#think-text-author").html(response.author)
         $("#think-source").html(response.source)
-        console.log(response)
       })
       .fail(function(response) {
         console.log(response)
