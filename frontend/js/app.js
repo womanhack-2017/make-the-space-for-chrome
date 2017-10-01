@@ -2,9 +2,64 @@
 $(document).ready(function() {
 
     applyListener();
+    thinkListener();
+    evolveListener();
+    donateListener();
   });
 
   var root = 'https://make-the-space.herokuapp.com/';
+
+  var donateListener = function () {
+    $("div#donate").one("mouseover", function(e) {
+      e.preventDefault();
+      $.ajax({
+        url: root + "donate",
+        method: 'GET'
+      })
+      .done(function(response) {
+        $("#donate-text").html(response.org_name)
+        $("#donate-description").html(response.description)
+      })
+    })
+  }
+
+  var evolveListener = function() {
+    $("div#evolve").one("mouseover", function(e) {
+      e.preventDefault();
+      $.ajax({
+        url: root + "evolve",
+        method: 'GET'
+      })
+      .done(function(response) {
+        $("#evolve-text").html(response.action)
+      })
+      .fail(function(response) {
+        console.log(response)
+      })
+    })
+  }
+
+  var thinkListener = function() {
+    $("div#think").one("mouseover", function(e) {
+      e.preventDefault();
+
+      $.ajax({
+        url: root + "think",
+        method: 'GET'
+      })
+      .done(function(response) {
+
+        $("#think-content-title").html( `<a href=${response.URL}>${response.title}</a>` )
+        $("#think-text-author").html(response.author)
+        $("#think-source").html(response.source)
+        console.log(response)
+      })
+      .fail(function(response) {
+        console.log(response)
+      })
+    })
+  }
+
 
   var applyListener = function() {
     $("div#apply").one("mouseover", function(e) {
@@ -17,7 +72,9 @@ $(document).ready(function() {
       })
       .done(function(response) {
         console.log("success")
-        $("p#applytext").html(response.description)
+
+        $("p#author").html("- " + response.name)
+        $("p#apply-text").html(response.description)
       })
       .fail(function(response) {
         console.log("fail")
