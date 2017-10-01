@@ -15,10 +15,4 @@ class TweetController < ApplicationController
     render json: @tweet
   end
 
-  def tweet_share_url
-    url_end = @tweet.tweet_content.gsub(" ", "+")
-    @complete_url = "https://twitter.com/intent/tweet?text=" + url_end
-    @complete_url
-  end 
-
 end
