@@ -1,19 +1,26 @@
 // TEST JS CONTENT EXAMPLE!!!
 $(document).ready(function() {
 
-    var root = 'https://make-the-space.herokuapp.com';
+    applyListener();
+  });
 
-    $.ajax({
-      url: root + '/tweet/1',
-      method: 'GET',
-    })
+  var root = 'https://make-the-space.herokuapp.com/';
+
+  var applyListener = function() {
+    $("div#apply").one("mouseover", function(e) {
+      e.preventDefault();
+      var applyContent = $(this);
+
+      $.ajax({
+        url: root + "apply",
+        method: 'GET',
+      })
       .done(function(response) {
         console.log("success")
-        console.log(response)
-        $(".main").append(response.tweet_content)
+        $("p#applytext").html(response.description)
       })
       .fail(function(response) {
-        console.log("********");
-        console.log(response);
-      });
-  });
+        console.log("fail")
+      })
+    })
+  }
