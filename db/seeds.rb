@@ -6,20 +6,20 @@ Develop.destroy_all
 Donate.destroy_all
 Evolve.destroy_all
 Think.destroy_all
-Tweet.destroy_all 
+Tweet.destroy_all
 
-#populate apply table 
+#populate apply table
 csv_apply_file = File.read(Rails.root.join('lib', 'seeds', 'apply_1.csv'))
 
 csv_apply = CSV.parse(csv_apply_file, :headers => true, :encoding => 'ISO-8859-1')
 
 csv_apply.each do |row|
-  a = Apply.new 
+  a = Apply.new
   a.name = row['name']
   a.description = row['description']
   a.URL = row['URL']
   a.save!
-end 
+end
 
 #populate develop table
 csv_develop_file = File.read(Rails.root.join('lib', 'seeds', 'develop_1.csv'))
@@ -27,12 +27,12 @@ csv_develop_file = File.read(Rails.root.join('lib', 'seeds', 'develop_1.csv'))
 csv_develop = CSV.parse(csv_develop_file, :headers => true, :encoding => 'ISO-8859-1')
 
 csv_develop.each do |row|
-  d = Develop.new 
+  d = Develop.new
   d.name = row['name']
   d.description = row['description']
   d.URL = row['webaddress']
   d.save!
-end 
+end
 
 #populate donate table
 csv_donate_file = File.read(Rails.root.join('lib', 'seeds', 'donate_1.csv'))
@@ -40,12 +40,12 @@ csv_donate_file = File.read(Rails.root.join('lib', 'seeds', 'donate_1.csv'))
 csv_donate = CSV.parse(csv_donate_file, :headers => true, :encoding => 'ISO-8859-1')
 
 csv_donate.each do |row|
-  d = Donate.new 
+  d = Donate.new
   d.org_name = row['org_name']
   d.description = row['description']
   d.URL = row['link']
   d.save!
-end 
+end
 
 
 #populate evolve table
@@ -54,10 +54,10 @@ csv_evolve_file = File.read(Rails.root.join('lib', 'seeds', 'evolve_1.csv'))
 csv_evolve = CSV.parse(csv_evolve_file, :headers => true, :encoding => 'ISO-8859-1')
 
 csv_evolve.each do |row|
-  e = Evolve.new 
+  e = Evolve.new
   e.action = row['action']
   e.save!
-end 
+end
 
 #populate think table
 csv_think_file = File.read(Rails.root.join('lib', 'seeds', 'think_1.csv'))
@@ -65,13 +65,13 @@ csv_think_file = File.read(Rails.root.join('lib', 'seeds', 'think_1.csv'))
 csv_think = CSV.parse(csv_think_file, :headers => true, :encoding => 'ISO-8859-1')
 
 csv_think.each do |row|
-  t = Think.new 
+  t = Think.new
   t.title = row['title']
   t.author = row['author']
   t.source = row['source']
   t.URL = row['URL']
   t.save!
-end 
+end
 
 
 # populate tweet table
@@ -84,7 +84,7 @@ csv_tweet.each do |row|
   t.tweet_content = row['tweet_content']
   t.share_tweet = row['share_tweet']
   t.save!
-end 
+end
 
 Connect.create!({
   title: "Tech Training for Chinese Women",
