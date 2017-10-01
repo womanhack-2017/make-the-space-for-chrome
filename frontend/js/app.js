@@ -73,7 +73,7 @@ $(document).ready(function() {
       .done(function(response) {
         console.log("success")
 
-        $("p#author").html("- " + response.name)
+        $("p#author").html(response.name)
         $("p#apply-text").html(response.description)
       })
       .fail(function(response) {
