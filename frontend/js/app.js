@@ -17,8 +17,9 @@ $(document).ready(function() {
         method: 'GET'
       })
       .done(function(response) {
-        $("#donate-text").html(response.org_name)
-        $("#donate-description").html(response.description)
+        $("#donate-org-name").html(response.org_name)
+        $("#donate-org-description").html(response.description)
+        $("#donate-link").html(`<a href=${response.URL}>Click here to Donate!</a>`)
       })
     })
   }
