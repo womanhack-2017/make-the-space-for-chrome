@@ -118,7 +118,7 @@ $(document).ready(function() {
         $("p#apply-text").html(response.description)
       })
       .fail(function(response) {
-        console.log("fail")
+        //console.log("fail")
       })
     })
   }
@@ -194,7 +194,7 @@ var paletteArray = [{"#33658A": 0, "#758E4F": 0, "#F6AE2D": 0, "#F26419": 0},
         var determineColors = function(colors){
           var colorsAtZero = valueChecker(colors,0);
           var colorsAtOne = valueChecker(colors,1);
-          
+
           if (colorsAtZero.length !== 0){
             var color = colorsAtZero.random()
             currentColors[color] += 1;
