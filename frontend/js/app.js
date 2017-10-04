@@ -114,7 +114,7 @@ $(document).ready(function() {
       .done(function(response) {
         console.log("success")
 
-        $("h5#author").html(response.name)
+        $("#apply-name").html(`<a href=${response.URL}>${response.name}</a>`)
         $("p#apply-text").html(response.description)
       })
       .fail(function(response) {
