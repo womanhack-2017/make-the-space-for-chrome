@@ -40,16 +40,16 @@ h3 {
 	bottom: 0;
 	right: 0;
 	margin-right: 15px;
-	color: black;
+	color: white;
 	font-size: 250%;
 }
 h5 {
-	color: black;
+	color: white;
 }
 
 p {
 	font-family: Open Sans;
-	color: black;
+	color: white;
 }
 
 .classWithPad {
@@ -58,5 +58,5 @@ p {
 }
 
 a {
-	color: black;
+	color: white;
 }

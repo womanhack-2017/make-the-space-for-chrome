@@ -124,7 +124,7 @@ $(document).ready(function() {
   }
 
   var colorSwitcher = function(){
-    var ids = ["meet", "tweet", "donate", "evolve", "think", "apply"]
+    var ids = ["think", "evolve", "tweet", "donate", "meet", "apply"]
     ids.forEach(function(id){
       $(`#${id}`).attr("style", `background-color: ${determineColors(currentColors)}`)
     })
