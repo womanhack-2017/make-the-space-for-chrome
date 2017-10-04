@@ -21,6 +21,7 @@ $(document).ready(function() {
       .done(function(response) {
         $("#event-title").html(`<a href=${response.URL}>${response.title}</a>`)
         $("#event-description").html(response.description)
+        $("#event-address").html(response.localized_address_display)
       })
       .fail(function(response) {
         console.log(response)
@@ -113,7 +114,7 @@ $(document).ready(function() {
       .done(function(response) {
         console.log("success")
 
-        $("p#author").html(response.name)
+        $("h5#author").html(response.name)
         $("p#apply-text").html(response.description)
       })
       .fail(function(response) {

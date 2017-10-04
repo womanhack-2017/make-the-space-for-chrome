@@ -12,6 +12,7 @@ body {
 	border-color: white;
 	border-width: 5px;
 	border-style: solid;
+	border-top: 0px;
 }
 
 #tweet {
@@ -21,6 +22,7 @@ body {
 	border-color: white;
 	border-width: 5px;
 	border-style: solid;
+	border-top: 0px;
 }
 
 #donate {
@@ -57,6 +59,7 @@ body {
 	border-color: white;
 	border-width: 5px;
 	border-style: solid;
+	border-top: 0px;
 }
 
 h3 {
