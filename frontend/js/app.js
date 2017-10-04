@@ -21,6 +21,7 @@ $(document).ready(function() {
       .done(function(response) {
         $("#event-title").html(`<a href=${response.URL}>${response.title}</a>`)
         $("#event-description").html(response.description)
+        $("#event-address").html(response.localized_address_display)
       })
       .fail(function(response) {
         console.log(response)
@@ -38,7 +39,10 @@ $(document).ready(function() {
       .done(function(response) {
         console.log(response)
         $("#tweet-description").html(response.tweet_content)
-        $("#tweet-content").html(`<a href=${response.share_tweet} class="twitter-share-button"data-show-count="false">  Tweet Now</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>`)
+        $("#tweet-content").html(
+            `<a href=${response.share_tweet} class="twitter-share-button" data-show-count="false">
+            <img src="/MTS_Tweet_Button.png" height="40"></a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`)
       })
       .fail(function(response) {
         console.log(response)
@@ -56,7 +60,7 @@ $(document).ready(function() {
       .done(function(response) {
         $("#donate-org-name").html(response.org_name)
         $("#donate-org-description").html(response.description)
-        $("#donate-link").html(`<a href=${response.URL}>Click here to Donate!</a>`)
+        $("#donate-link").html(`<a href=${response.URL}><img src="/MTS_Donate_Button.png" height="40"></a>`)
       })
     })
   }
@@ -101,16 +105,13 @@ $(document).ready(function() {
   var applyListener = function() {
     $("div#apply").one("mouseover", function(e) {
       e.preventDefault();
-      var applyContent = $(this);
 
       $.ajax({
         url: root + "apply",
         method: 'GET',
       })
       .done(function(response) {
-        console.log("success")
-
-        $("p#author").html(response.name)
+        $("#apply-name").html( `<a href=${response.URL}>${response.name}</a>` )
         $("p#apply-text").html(response.description)
       })
       .fail(function(response) {
