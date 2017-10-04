@@ -1,43 +1,37 @@
 font-family: "Raleway", sans-serif;
 font-family: "Open Sans", sans-serif;
 
-body {
+html body {
 	padding: 80%;
 }
 
 #think {
 	font-family: Raleway;
-	background-color: #3b0e44;
 	display: flex;
 }
 
 #tweet {
 	font-family: Raleway;
-	background-color: #b0dbcd;
 	display: flex;
 }
 
 #donate {
 	font-family: Raleway;
-	background-color: #b31f89;
 	display: flex;
 }
 
 #evolve {
 	font-family: Raleway;
-	background-color: #484a4b;
 	display: flex;
 }
 
 #apply {
 	font-family: Raleway;
-	background-color: #cec5c0;
 	display: flex;
 }
 
 #meet {
 	font-family: Raleway;
-	background-color: #0a1533;
 	display: flex;
 }
 
@@ -46,16 +40,16 @@ h3 {
 	bottom: 0;
 	right: 0;
 	margin-right: 15px;
-	color: white;
+	color: black;
 	font-size: 250%;
 }
 h5 {
-	color: white;
+	color: black;
 }
 
 p {
 	font-family: Open Sans;
-	color: white;
+	color: black;
 }
 
 .classWithPad {
@@ -64,5 +58,5 @@ p {
 }
 
 a {
-	color: white;
+	color: black;
 }
