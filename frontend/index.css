@@ -9,36 +9,54 @@ body {
 	font-family: Raleway;
 	background-color: #3b0e44;
 	display: flex;
+	border-color: white;
+	border-width: 5px;
+	border-style: solid;
 }
 
 #tweet {
 	font-family: Raleway;
 	background-color: #b0dbcd;
 	display: flex;
+	border-color: white;
+	border-width: 5px;
+	border-style: solid;
 }
 
 #donate {
 	font-family: Raleway;
 	background-color: #b31f89;
 	display: flex;
+	border-color: white;
+	border-width: 5px;
+	border-style: solid;
 }
 
 #evolve {
 	font-family: Raleway;
 	background-color: #484a4b;
 	display: flex;
+	border-color: white;
+	border-width: 5px;
+	border-style: solid;
 }
 
 #apply {
 	font-family: Raleway;
 	background-color: #cec5c0;
 	display: flex;
+	border-color: white;
+	border-width: 5px;
+	border-style: solid;
 }
 
 #meet {
 	font-family: Raleway;
 	background-color: #0a1533;
 	display: flex;
+	border-color: white;
+	border-width: 5px;
+	border-style: solid;
 }
 
 h3 {
@@ -60,7 +78,7 @@ p {
 
 .classWithPad {
 	margin: 10px;
-	padding: 10px;
+	padding: 20px;
 }
 
 a {
