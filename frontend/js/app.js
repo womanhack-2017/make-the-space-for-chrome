@@ -25,7 +25,7 @@ $(document).ready(function() {
       .done(function(response) {
         $("#event-title").html(`<a href=${response.URL}>${response.title}</a>`)
         $("#event-description").html(response.description)
-        $("#event-address").html(response.localized_address_display)
+        // $("#event-address").html(response.localized_address_display)
       })
       .fail(function(response) {
         console.log(response)
@@ -96,7 +96,7 @@ $(document).ready(function() {
       .done(function(response) {
 
         $("#think-content-title").html( `<a href=${response.URL}>${response.title}</a>` )
-        $("#think-text-author").html(response.author)
+        // $("#think-text-author").html(response.author)
         $("#think-source").html(response.source)
       })
       .fail(function(response) {

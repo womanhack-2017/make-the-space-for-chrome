@@ -82,6 +82,10 @@ a {
 	color: white;
 }
 
+a:hover {
+	color: white;
+}
+
 #evolve-text {
 	font-family: Raleway;
 	font-size: 1.35em;
