@@ -43,7 +43,7 @@ Upcoming features:
 * Integarion with Google News API for the most up-to-date news
 
 ## Team Members
-Make the Space came together to participate in WomanHack SF 2017. We are:
+Make the Space has an all-female developer team! We came together to participate in WomanHack SF 2017:
 
 Denise Duffy | [@duffydduffyd](http://github.com/duffydduffyd)
 
