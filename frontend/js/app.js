@@ -115,7 +115,10 @@ $(document).ready(function() {
         method: 'GET',
       })
       .done(function(response) {
-        $("#apply-name").html( `<a href=${response.URL}>${response.name}</a>` )
+        console.log(response.URL)
+        console.log(response.name)
+        let applyLink = '<a href="' + response.URL + '"/a>' + response.name + '</a>'
+        $("#apply-name").html(applyLink)
         $("p#apply-text").html(response.description)
       })
       .fail(function(response) {
