@@ -2,26 +2,19 @@
 
 # Make the Space
 
-**A platform to elevate women everyday **
 
-Make the space is a Chrome extension that provides a command center homepage for female-positive actions.
+## Team Members
+Make the Space came together to participate in the WomanHack SF 2017 Hackathon. Team members include:
 
+Denise Duffy ([@duffydduffyd](http://github.com/duffydduffyd))
 
-**Send a prepopulated tweet**
+Ginny Fahs ([@ginnyfahs](http://github.com/ginnyfahs))
 
-**Donate to an important charity**
+Faye Hayes ([@fhayes301](http://github.com/fhayes301))
 
-**Plan to attend to an Eventbright event**
+May Jawdat ([@mayjawdat](http://github.com/mayjawdat))
 
-**Think about an article**
+Andrea Scott ([@icedcoffeeallday](http://github.com/icedcoffeeallday))
 
-**Evolve with a suggested action** 
+Vilde Vevatne ([@vildevev](http://github.com/vildevev))
 
-Authors:
-Faye Hayes
-Ginny Fahs
-Andrea Scott
-Denise Duffy 
-Vilde Vevatne
-
-Using Ruby version 2.3.1
