@@ -91,3 +91,15 @@ a {
 	font-family: Raleway;
 	font-size: 1.35em;
 }
+
+#page-headline {
+	font-family: Raleway;
+	font-size: 3em;
+	padding-top: 30px;
+	padding-bottom: 30px
+}
+
+#mts-logo {
+	padding-top: 30px;
+	padding-bottom: 30px
+}
